@@ -1,0 +1,8 @@
+
+httplib2
+simplekv
+flaskext
+sqlalchemy
+collections
+math
+jinja2
