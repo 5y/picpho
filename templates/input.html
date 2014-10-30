@@ -1,0 +1,51 @@
+ <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css">
+<!--    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,400,400italic" type="text/css">
+ -->   <link rel="stylesheet" href="{{ url_for('static', filename='boot.css') }}" type="text/css">
+  <title>{{ APPLICATION_NAME }}</title>
+
+<div class="register_body">
+
+	<div>
+<form method="POST" action="/register">
+  {{ form.hidden_tag() }}
+  {{ form.row.label }} 		</br>{{ form.row(size=20) }}</br>
+  {{ form.column.label }} </br>{{ form.column(size=20) }}</br>
+  {{ form.type_.label }} </br>{{ form.type_(size=20) }}</br>
+
+
+
+
+
+    <input type="submit" value="Go">
+</form>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!--    {% macro states_select(name, value='', class='', id='') -%}
+
+ {% set states = ["AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA",
+"ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH",
+"OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"] %}
+
+
+ <select name="{{name}}" class="{{class}}" id="{{id}}">
+ {% for state in states %}
+ <option value="{{state}}" {{'selected' if value==state else ''}}>{{state}}</option>
+ {% endfor %}
+ </select>
+
+
+
+{%- endmacro %}
+  -->

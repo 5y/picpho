@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"
+          rel="stylesheet">
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css">
+<!--    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,400,400italic" type="text/css">
+ -->   <link rel="stylesheet" href="{{ url_for('static', filename='boot.css') }}" type="text/css">
+  <title>{{ APPLICATION_NAME }}</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h3 class="text-muted">How To Upload a File</h3>
+      </div>
+      <hr/>
+      <div>
+
+      
+      <form action="upload" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file"><br /><br />
+        
+        <input type="submit" value="Upload">
+      </form>
+
+      </div>
+    </div>
+  </body>` 
+</html>
+ 
+
+
