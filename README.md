@@ -1,1 +1,1 @@
-Online Python based Image Montage 
+Python based Online image Editor 
